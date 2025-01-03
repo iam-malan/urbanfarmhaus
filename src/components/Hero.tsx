@@ -7,7 +7,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: 'url("/src/images/reddoor.jpg")',
+          backgroundImage: `url(${new URL('../images/reddoor.jpg', import.meta.url).href})`,
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-40" />

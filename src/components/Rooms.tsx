@@ -6,28 +6,28 @@ import { RoomCard } from './rooms/RoomCard';
 const rooms = [
   {
     title: 'Family Double Room',
-    image: '/src/images/room1.jpg',
+    image: new URL('../images/room1.jpg', import.meta.url).href,
     description: '12m² cozy room with private bathroom and walk-in shower, overlooking our beautiful garden',
     features: ['Ground floor', 'Garden view', 'Private bathroom', 'Walk-in shower'],
     price: 'From N$1,200 per night',
   },
   {
     title: 'Family Room with Bathroom',
-    image: '/src/images/room2.jpg',
+    image: new URL('../images/room2.jpg', import.meta.url).href,
     description: 'Spacious 20m² room with private bathroom and bath, perfect for families',
     features: ['Ground floor', 'Garden view', 'Private bathroom', 'Bath'],
     price: 'From N$1,500 per night',
   },
   {
     title: 'Deluxe Double Room',
-    image: '/src/images/room3.jpg',
+    image: new URL('../images/room3.jpg', import.meta.url).href,
     description: 'Intimate 8m² room with private bathroom and garden views',
     features: ['Garden view', 'Private bathroom', 'Cozy atmosphere'],
     price: 'From N$900 per night',
   },
   {
     title: 'One-Bedroom Apartment',
-    image: '/src/images/room4.jpg',
+    image: new URL('../images/room4.jpg', import.meta.url).href,
     description: 'Luxurious 25m² apartment with private bathroom and garden views',
     features: ['Spacious living area', 'Garden view', 'Private bathroom', 'Kitchen facilities'],
     price: 'From N$2,000 per night',
