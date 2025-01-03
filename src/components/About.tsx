@@ -33,7 +33,7 @@ const About = () => {
               <div className="absolute inset-0 border-8 border-amber-50 rounded-lg shadow-lg transform rotate-1"></div>
               {/* Art image */}
               <img
-                src="/src/images/art.jpg"
+                src={new URL('../images/art.jpg', import.meta.url).href}
                 alt="Local artwork displayed in our guest house"
                 className="relative z-10 rounded-lg w-full h-auto shadow-xl"
               />

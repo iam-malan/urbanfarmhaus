@@ -15,7 +15,7 @@ const images: GalleryImage[] = [
     alt: 'Another view of our signature red door and entrance area'
   },
   {
-    src: new URL('../images/art%20area.jpg', import.meta.url).href,
+    src: new URL('../images/art area.jpg', import.meta.url).href,
     alt: 'Art display area showcasing local Namibian talent'
   },
   {
