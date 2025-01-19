@@ -29,6 +29,10 @@ const images: GalleryImage[] = [
   {
     src: new URL('../images/collage.jpg', import.meta.url).href,
     alt: 'A collage showcasing various aspects of Urban Farm Haus'
+  },
+  {
+    src: new URL('../images/gallery.png', import.meta.url).href,
+    alt: 'Beautiful view of our guest house facilities'
   }
 ];
 

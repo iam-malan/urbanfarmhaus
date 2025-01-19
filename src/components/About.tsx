@@ -56,7 +56,7 @@ const About = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <Clock className="w-8 h-8 text-red-600 mb-4" />
               <h3 className="text-xl font-semibold mb-4">Check-in/out</h3>
-              <p className="text-gray-600">Check-in: 11:00 - 19:00</p>
+              <p className="text-gray-600">Check-in: 15:00 - 19:00</p>
               <p className="text-gray-600">Check-out: 06:00 - 10:00</p>
             </div>
 

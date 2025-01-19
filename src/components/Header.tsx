@@ -45,7 +45,7 @@ const Header = () => {
               </button>
             ))}
             <a
-              href="https://nightsbridge.com"
+              href="https://book.nightsbridge.com/36746"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors"
@@ -74,7 +74,7 @@ const Header = () => {
               </button>
             ))}
             <a
-              href="https://nightsbridge.com"
+              href="https://book.nightsbridge.com/36746"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors mt-4"
