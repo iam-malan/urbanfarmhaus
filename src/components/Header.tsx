@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <header 
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
+        isScrolled || isMobileMenuOpen ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
       }`}
     >
       <div className="container mx-auto px-4">
@@ -68,7 +68,7 @@ const Header = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className={`block w-full text-left py-2 ${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-red-600 transition-colors`}
+                className="block w-full text-left py-2 text-gray-700 hover:text-red-600 transition-colors"
               >
                 {item}
               </button>

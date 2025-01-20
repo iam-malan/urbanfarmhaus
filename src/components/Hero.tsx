@@ -27,12 +27,12 @@ const Hero = () => {
           Where farmhouse charm meets natural serenity - your urban oasis in Rundu
           </p>
           <a
-            href="https://nightsbridge.com"
+            href="https://book.nightsbridge.com/36746"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-red-600 text-white px-8 py-3 rounded-full text-lg hover:bg-red-700 transition-colors"
           >
-            Book Your Stay
+            Book Now
           </a>
         </div>
       </motion.div>
