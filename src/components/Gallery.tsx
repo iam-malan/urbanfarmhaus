@@ -43,7 +43,7 @@ const Gallery = () => {
   });
 
   return (
-    <section id="gallery" className="py-20">
+    <section id="gallery" className="py-12 md:py-20">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
@@ -51,23 +51,27 @@ const Gallery = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold text-center mb-12">Gallery</h2>
-          <PhotoProvider>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12">Gallery</h2>
+          <PhotoProvider maskOpacity={0.8}>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
               {images.map((image, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.8, delay: index * 0.1 }}
-                  className="relative aspect-square overflow-hidden rounded-lg cursor-pointer"
+                  className="relative aspect-square overflow-hidden rounded-lg cursor-pointer touch-manipulation"
                 >
                   <PhotoView src={image.src}>
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
-                    />
+                    <div className="w-full h-full">
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        loading="lazy"
+                        className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110 active:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 hover:opacity-100" />
+                    </div>
                   </PhotoView>
                 </motion.div>
               ))}

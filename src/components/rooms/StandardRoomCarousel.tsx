@@ -38,7 +38,7 @@ const StandardRoomCarousel: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full" style={{ minHeight: '200px' }}>
+    <div className="relative w-full aspect-[4/3] md:aspect-[16/9]">
       {images.map((image, index) => (
         <div
           key={index}
@@ -49,28 +49,28 @@ const StandardRoomCarousel: React.FC = () => {
           <img
             src={image.src}
             alt={image.alt}
-            className="w-full h-auto max-h-[500px] object-contain"
+            className="w-full h-full object-cover"
           />
         </div>
       ))}
       
       <button
         onClick={goToPrevious}
-        className="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors"
+        className="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-black/50 hover:bg-black/70 text-white p-3 md:p-2 rounded-full transition-colors touch-manipulation"
         aria-label="Previous image"
       >
-        <ChevronLeft className="w-6 h-6" />
+        <ChevronLeft className="w-8 h-8 md:w-6 md:h-6" />
       </button>
       
       <button
         onClick={goToNext}
-        className="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors"
+        className="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-black/50 hover:bg-black/70 text-white p-3 md:p-2 rounded-full transition-colors touch-manipulation"
         aria-label="Next image"
       >
-        <ChevronRight className="w-6 h-6" />
+        <ChevronRight className="w-8 h-8 md:w-6 md:h-6" />
       </button>
 
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex space-x-2">
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex space-x-3">
         {images.map((_, index) => (
           <button
             key={index}
@@ -78,7 +78,7 @@ const StandardRoomCarousel: React.FC = () => {
               e.stopPropagation();
               setCurrentIndex(index);
             }}
-            className={`w-2 h-2 rounded-full transition-colors ${
+            className={`w-3 h-3 md:w-2 md:h-2 rounded-full transition-colors touch-manipulation ${
               index === currentIndex ? 'bg-white' : 'bg-white/50'
             }`}
             aria-label={`Go to image ${index + 1}`}

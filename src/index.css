@@ -2,14 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply text-gray-800;
+  @apply text-gray-800 overflow-x-hidden min-w-[320px];
+}
+
+/* Ensure images don't overflow their containers */
+img {
+  @apply max-w-full h-auto;
 }
 
 .container {
-  @apply max-w-7xl mx-auto;
+  @apply max-w-7xl mx-auto px-4 w-full;
 }

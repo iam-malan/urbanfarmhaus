@@ -44,7 +44,7 @@ const Rooms = () => {
   });
 
   return (
-    <section id="rooms" className="py-24 bg-gray-50">
+    <section id="rooms" className="py-12 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
@@ -53,16 +53,16 @@ const Rooms = () => {
           transition={{ duration: 0.8 }}
           className="max-w-7xl mx-auto"
         >
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-4xl font-bold mb-6">Luxury Accommodation</h2>
-            <p className="text-lg text-gray-600">
+          <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16 px-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6">Luxury Accommodation</h2>
+            <p className="text-base md:text-lg text-gray-600">
               Experience comfort and elegance in our thoughtfully designed rooms. 
               From family-friendly units to accessible accommodations, each room is 
               crafted to ensure a memorable stay.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-10">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-10">
             {rooms.map((room, index) => (
               <motion.div
                 key={room.title}

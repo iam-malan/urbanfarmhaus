@@ -24,11 +24,13 @@ export const RoomCard: React.FC<RoomCardProps> = ({ room, index, inView }) => {
       return <StandardRoomCarousel />;
     }
     return (
-      <img
-        src={room.image}
-        alt={room.title}
-        className="w-full h-auto max-h-[500px] object-contain transform group-hover:scale-105 transition-transform duration-500"
-      />
+      <div className="aspect-[4/3] md:aspect-[16/9] overflow-hidden">
+        <img
+          src={room.image}
+          alt={room.title}
+          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+        />
+      </div>
     );
   };
 
@@ -47,26 +49,36 @@ export const RoomCard: React.FC<RoomCardProps> = ({ room, index, inView }) => {
               href="https://book.nightsbridge.com/36746"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-red-600 text-white px-8 py-3 rounded-full hover:bg-red-700 transition-colors transform hover:scale-105"
+              className="bg-red-600 text-white px-8 py-4 rounded-lg hover:bg-red-700 transition-colors transform hover:scale-105 touch-manipulation"
             >
               Book Now
             </a>
           </div>
         </div>
-        <div className="p-6">
+        <div className="p-4 md:p-6">
           <h3 className="text-2xl font-bold mb-3 text-gray-800">{room.title}</h3>
           <p className="text-gray-600 mb-6 leading-relaxed">{room.description}</p>
-          <div className="space-y-3 mb-6">
+          <div className="space-y-4 mb-6">
             {room.features.map((feature) => (
-              <li key={feature} className="flex items-center text-gray-600">
-                <Check className="w-5 h-5 text-red-600 mr-3" />
-                {feature}
+              <li key={feature} className="flex items-start text-gray-600">
+                <Check className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" />
+                <span className="flex-1">{feature}</span>
               </li>
             ))}
           </div>
-          <div className="flex justify-between items-center pt-4 border-t border-gray-100">
-            <p className="text-red-600 font-bold text-xl">{room.price}</p>
-            <span className="text-sm text-gray-500">per night</span>
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 pt-4 border-t border-gray-100">
+            <div className="flex items-baseline gap-2">
+              <p className="text-red-600 font-bold text-xl">{room.price}</p>
+              <span className="text-sm text-gray-500">per night</span>
+            </div>
+            <a
+              href="https://book.nightsbridge.com/36746"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="sm:hidden w-full bg-red-600 text-white px-6 py-3 rounded-lg text-center hover:bg-red-700 transition-colors touch-manipulation"
+            >
+              Book Now
+            </a>
           </div>
         </div>
       </div>

@@ -47,7 +47,7 @@ const About = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <MapPin className="w-8 h-8 text-red-600 mb-4" />
               <h3 className="text-xl font-semibold mb-4">Location</h3>
-              <p className="text-gray-600">3QH4+93 Rundu, Namibia</p>
+              <p className="text-gray-600">Erf 1582, Rundu, Namibia</p>
               <p className="text-gray-600">Tutungeni Area</p>
               <p className="text-gray-600">+264 81 140 5668</p>
               <p className="text-gray-600">bookings.urbanfarmhaus@gmail.com</p>
