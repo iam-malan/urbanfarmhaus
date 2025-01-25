@@ -9,7 +9,6 @@ const rooms = [
     image: new URL('../images/familyplus.jpg', import.meta.url).href,
     description: 'Luxurious family suite featuring both bath and shower facilities, perfect for families seeking comfort and space. This generously sized unit comfortably accommodates up to 5 guests.',
     features: ['Sleeps up to 5 guests', 'Full bathroom suite', 'Premium bedding', 'Garden view', 'Air conditioning'],
-    price: 'N$1,586.77',
     useCarousel: false
   },
   {
@@ -17,7 +16,6 @@ const rooms = [
     image: new URL('../images/2family.jpg', import.meta.url).href,
     description: 'Modern family accommodation with a spacious walk-in shower. This well-appointed unit provides comfortable sleeping space for up to 4 guests, ideal for family getaways.',
     features: ['Sleeps up to 4 guests', 'Walk-in rainfall shower', 'Comfortable living space', 'Garden view', 'Air conditioning'],
-    price: 'N$1,586.77',
     useCarousel: false
   },
   {
@@ -25,14 +23,12 @@ const rooms = [
     image: new URL('../images/wheelchair.jpg', import.meta.url).href,
     description: 'Thoughtfully designed accessible room with adapted facilities ensuring comfort for all guests. Features include wide doorways, accessible bathroom, and modern amenities.',
     features: ['Fully accessible design', 'Adapted bathroom', 'Emergency cord', 'Level access shower', 'Support rails'],
-    price: 'N$1,346.89',
     useCarousel: false
   },
   {
     title: 'Standard Double Room',
     description: 'Elegant and comfortable double room offering a perfect blend of style and convenience. Each room features modern amenities and is decorated with tasteful furnishings.',
     features: ['Queen-size bed', 'En-suite bathroom', 'Garden view', 'Air conditioning', 'Work desk'],
-    price: 'N$1,348.69',
     useCarousel: true
   },
 ];

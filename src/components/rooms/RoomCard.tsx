@@ -8,7 +8,6 @@ interface RoomFeature {
   image?: string;
   description: string;
   features: string[];
-  price: string;
   useCarousel?: boolean;
 }
 
@@ -66,11 +65,7 @@ export const RoomCard: React.FC<RoomCardProps> = ({ room, index, inView }) => {
               </li>
             ))}
           </div>
-          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 pt-4 border-t border-gray-100">
-            <div className="flex items-baseline gap-2">
-              <p className="text-red-600 font-bold text-xl">{room.price}</p>
-              <span className="text-sm text-gray-500">per night</span>
-            </div>
+          <div className="flex justify-end pt-4 border-t border-gray-100">
             <a
               href="https://book.nightsbridge.com/36746"
               target="_blank"
