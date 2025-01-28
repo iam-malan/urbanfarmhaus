@@ -1,17 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { OptimizedBackground } from './common/OptimizedBackground';
 
 const Hero = () => {
   return (
     <section id="home" className="relative h-screen">
-      <div 
+      <OptimizedBackground
+        src={new URL('../images/reddoor.jpg', import.meta.url).href}
         className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${new URL('../images/reddoor.jpg', import.meta.url).href})`,
-        }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-40" />
-      </div>
+      </OptimizedBackground>
       
       <motion.div 
         initial={{ opacity: 0, y: 20 }}

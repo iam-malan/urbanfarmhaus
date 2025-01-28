@@ -1,4 +1,5 @@
 import React from 'react';
+import { OptimizedImage } from '../common/OptimizedImage';
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 import StandardRoomCarousel from './StandardRoomCarousel';
@@ -23,11 +24,11 @@ export const RoomCard: React.FC<RoomCardProps> = ({ room, index, inView }) => {
       return <StandardRoomCarousel />;
     }
     return (
-      <div className="aspect-[4/3] md:aspect-[16/9] overflow-hidden">
-        <img
-          src={room.image}
+      <div className="aspect-[4/3] md:aspect-[16/9]">
+        <OptimizedImage
+          src={room.image || ''}
           alt={room.title}
-          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+          className="transform group-hover:scale-105 transition-transform duration-500"
         />
       </div>
     );

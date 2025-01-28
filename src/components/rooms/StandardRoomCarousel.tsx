@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { OptimizedImage } from '../common/OptimizedImage';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
@@ -46,10 +47,10 @@ const StandardRoomCarousel: React.FC = () => {
             index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
           }`}
         >
-          <img
+          <OptimizedImage
             src={image.src}
             alt={image.alt}
-            className="w-full h-full object-cover"
+            className="w-full h-full"
           />
         </div>
       ))}
