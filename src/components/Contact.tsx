@@ -25,9 +25,9 @@ const Contact = () => {
                 <Phone className="w-6 h-6 text-red-600 flex-shrink-0" />
                 <span className="text-base md:text-lg">+264 81 140 5668</span>
               </a>
-              <a href="mailto:bookings.urbanfarmhaus@gmail.com" className="flex items-center space-x-4 p-2 -mx-2 rounded-lg hover:bg-gray-100 transition-colors touch-manipulation">
+              <a href="mailto:booknow@urbanfarmhaus.africa" className="flex items-center space-x-4 p-2 -mx-2 rounded-lg hover:bg-gray-100 transition-colors touch-manipulation">
                 <Mail className="w-6 h-6 text-red-600 flex-shrink-0" />
-                <span className="text-base md:text-lg break-all">bookings.urbanfarmhaus@gmail.com</span>
+                <span className="text-base md:text-lg break-all">booknow@urbanfarmhaus.africa</span>
               </a>
               <div className="flex items-start space-x-4 p-2 -mx-2">
                 <MapPin className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />

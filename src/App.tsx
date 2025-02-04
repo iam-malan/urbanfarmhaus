@@ -7,6 +7,7 @@ import Dining from './components/Dining';
 import Facilities from './components/Facilities';
 import Gallery from './components/Gallery';
 import Testimonials from './components/Testimonials';
+import Awards from './components/Awards';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -22,6 +23,7 @@ function App() {
         <Facilities />
         <Gallery />
         <Testimonials />
+        <Awards />
         <Contact />
       </main>
       <Footer />
