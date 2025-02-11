@@ -50,7 +50,7 @@ const About = () => {
               <p className="text-gray-600">Erf 1582, Rundu, Namibia</p>
               <p className="text-gray-600">Tutungeni Area</p>
               <p className="text-gray-600">+264 81 140 5668</p>
-              <p className="text-gray-600">booknow@urbanfarmhaus.africa</p>
+              <p className="text-gray-600">bookings.urbanfarmhaus@gmail.com</p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
