@@ -3,9 +3,9 @@ import { OptimizedImage } from './common/OptimizedImage';
 
 const Awards: React.FC = () => {
   const awards = [
-    { src: '/src/images/award1.jpeg', alt: 'Award 1' },
-    { src: '/src/images/award2.jpeg', alt: 'Award 2' },
-    { src: '/src/images/award3.jpeg', alt: 'Award 3' },
+    { src: 'src/images/award1.jpeg', alt: 'Award 1' },
+    { src: 'src/images/award2.jpeg', alt: 'Award 2' },
+    { src: 'src/images/award3.jpeg', alt: 'Award 3' },
   ];
 
   return (
